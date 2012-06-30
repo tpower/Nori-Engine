@@ -45,6 +45,7 @@ bool GraphicsEngine::isTypeDrawable(int type)
     return false;
 }
 
+/*****************************************************************************
 void GraphicsEngine::sortByLayer(vector<GraphicalObject*>& images)
 {
     for(int i = 0; i < (int)images.size(); i++)
@@ -60,3 +61,37 @@ void GraphicsEngine::sortByLayer(vector<GraphicalObject*>& images)
         }
     }
 }
+*******************************************************************************/
+
+void GraphicsEngine::sortByLayer(vector<GraphicalObject*>& list)
+{
+    quickSort(list, 0, list.size()-1);
+}
+
+void GraphicsEngine::quickSort(vector<GraphicalObject*>& vec, int start, int end)
+{
+    if(start <= end)
+    {
+        int p = partition(vec, start, end);
+        quickSort(vec, start, p-1);
+        quickSort(vec, p+1, end);
+    }
+}
+
+int GraphicsEngine::partition(vector<GraphicalObject*>& vec, int start, int end)
+{
+	int pivotValue = vec[start]->getLayer();
+	int pivotPos = start;
+
+	for( int pos = start+1; pos <= end; pos++)
+	{
+		if( vec[pos]->getLayer() < pivotValue )
+		{
+			swap( vec[pivotPos+1], vec[pos]);
+			swap( vec[pivotPos], vec[pivotPos+1]);
+			pivotPos++;
+		}
+	}
+	return pivotPos;
+}
+

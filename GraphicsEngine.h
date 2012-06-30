@@ -18,6 +18,8 @@ class GraphicsEngine : public Engine
         void process(vector<Object*> objects);
         bool isTypeDrawable(int type);
         void sortByLayer(vector<GraphicalObject*>&);
+		void quickSort(vector<GraphicalObject*>&, int start, int end);
+        int partition(vector<GraphicalObject*>&, int start, int end);
 };
 
 #endif
