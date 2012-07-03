@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1341284131 source:c:\users\tucker\documents\codeblocks\project shako\game.cpp
+	"Game.h"
+	"TESTGraphicalObject.h"
+	"TESTAudioObject.h"
+	"GraphicsEngine.h"
+	"AudioEngine.h"
+
+1341080479 c:\users\tucker\documents\codeblocks\project shako\game.h
+	<vector>
+	"Object.h"
+	"Engine.h"
+	<fstream>
+	<SDL/SDL.h>
+
+1341284905 c:\users\tucker\documents\codeblocks\project shako\object.h
+	<SDL/SDL.h>
+
+1341080479 c:\users\tucker\documents\codeblocks\project shako\engine.h
+	"Object.h"
+	<vector>
+
+1341081136 source:c:\users\tucker\documents\codeblocks\project shako\graphicsengine.cpp
+	"GraphicsEngine.h"
+	"GraphicalObject.h"
+
+1341081091 c:\users\tucker\documents\codeblocks\project shako\graphicsengine.h
+	"Engine.h"
+	"GraphicalObject.h"
+	<SDL/SDL.h>
+
+1341282370 c:\users\tucker\documents\codeblocks\project shako\graphicalobject.h
+	"Object.h"
+	<SDL/SDL.h>
+
+1341284895 source:c:\users\tucker\documents\codeblocks\project shako\object.cpp
+	"Object.h"
+
+1341080479 source:c:\users\tucker\documents\codeblocks\project shako\main.cpp
+	<iostream>
+	<SDL/SDL.h>
+	"Game.h"
+
+1341080479 source:c:\users\tucker\documents\codeblocks\project shako\engine.cpp
+	"Engine.h"
+
+1341282370 source:c:\users\tucker\documents\codeblocks\project shako\graphicalobject.cpp
+	"GraphicalObject.h"
+
+1340936621 source:c:\users\tucker\documents\codeblocks\project shako\audioengine.cpp
+	"AudioEngine.h"
+
+1340933955 c:\users\tucker\documents\codeblocks\project shako\audioengine.h
+	"Engine.h"
+	"AudibleObject.h"
+	"SDL/SDL_mixer.h"
+
+1341281535 c:\users\tucker\documents\codeblocks\project shako\audibleobject.h
+	"SDL/SDL_mixer.h"
+	"Object.h"
+	<vector>
+
+1341281535 source:c:\users\tucker\documents\codeblocks\project shako\audibleobject.cpp
+	"AudibleObject.h"
+
+1341283652 source:c:\users\tucker\documents\codeblocks\project shako\testaudioobject.cpp
+	"TESTAudioObject.h"
+
+1341283652 c:\users\tucker\documents\codeblocks\project shako\testaudioobject.h
+	"AudibleObject.h"
+
+1341284917 source:c:\users\tucker\documents\codeblocks\project shako\testgraphicalobject.cpp
+	"TESTGraphicalObject.h"
+
+1341283614 c:\users\tucker\documents\codeblocks\project shako\testgraphicalobject.h
+	"GraphicalObject.h"
+

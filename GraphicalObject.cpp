@@ -2,7 +2,9 @@
 
 GraphicalObject::GraphicalObject()
 {
-
+    type += 1000;
+    layer = 0;
+    image = SDL_LoadBMP( "TESTimage.bmp" );
 }
 
 GraphicalObject::~GraphicalObject()

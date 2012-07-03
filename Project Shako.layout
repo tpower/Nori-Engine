@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="AudibleObject.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="122" topLine="0" />
+	</File>
+	<File name="AudibleObject.h" open="0" top="0" tabpos="2">
+		<Cursor position="52" topLine="0" />
+	</File>
+	<File name="AudioEngine.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="189" topLine="13" />
+	</File>
+	<File name="AudioEngine.h" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Engine.h" open="0" top="0" tabpos="4">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="Game.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="936" topLine="42" />
+	</File>
+	<File name="Game.h" open="0" top="0" tabpos="2">
+		<Cursor position="117" topLine="0" />
+	</File>
+	<File name="GraphicalObject.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="154" topLine="0" />
+	</File>
+	<File name="GraphicalObject.h" open="0" top="0" tabpos="2">
+		<Cursor position="191" topLine="0" />
+	</File>
+	<File name="GraphicsEngine.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="842" topLine="21" />
+	</File>
+	<File name="GraphicsEngine.h" open="0" top="0" tabpos="2">
+		<Cursor position="573" topLine="0" />
+	</File>
+	<File name="Object.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="84" topLine="0" />
+	</File>
+	<File name="Object.h" open="1" top="0" tabpos="6">
+		<Cursor position="161" topLine="11" />
+	</File>
+	<File name="TESTAudioObject.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="210" topLine="0" />
+	</File>
+	<File name="TESTAudioObject.h" open="0" top="0" tabpos="0">
+		<Cursor position="260" topLine="0" />
+	</File>
+	<File name="TESTGraphicalObject.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="99" topLine="0" />
+	</File>
+	<File name="TESTGraphicalObject.h" open="0" top="0" tabpos="5">
+		<Cursor position="271" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="173" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

@@ -8,13 +8,14 @@
 class GraphicalObject : public Object
 {
     protected:
+        SDL_Surface    *image;
         int layer;
 
     public:
         GraphicalObject();
         ~GraphicalObject();
 
-        void draw(SDL_Surface* screen);
+        virtual void draw(SDL_Surface* screen) = 0;
         int  getLayer();
 };
 

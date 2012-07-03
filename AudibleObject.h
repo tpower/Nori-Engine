@@ -11,13 +11,12 @@ using namespace std;
 class AudibleObject : public Object
 {
     protected:
-        vector<Mix_Chunk*>    sounds;
 
     public:
         AudibleObject();
         ~AudibleObject();
 
-        void processSound();
+        virtual void processSound() = 0;
 };
 
 #endif // AUDIBLEOBJECT_H
