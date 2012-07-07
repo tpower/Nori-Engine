@@ -3,15 +3,18 @@
 //Objects to load
 #include "TESTGraphicalObject.h"
 #include "TESTAudioObject.h"
+#include "TESTControllableObject.h"
 
 //Engines to load
 #include "GraphicsEngine.h"
 #include "AudioEngine.h"
+#include "ControlEngine.h"
 
 Game::Game()
 {
     engines.push_back(dynamic_cast<Engine*>(new GraphicsEngine()));
     engines.push_back(dynamic_cast<Engine*>(new AudioEngine()));
+    engines.push_back(dynamic_cast<Engine*>(new ControlEngine()));
     running = false;
 }
 
@@ -41,6 +44,9 @@ void Game::load(const char* fileName)
                 break;
             case 2:
                 objects.push_back(new TESTAudioObject());
+                break;
+            case 3:
+                objects.push_back(new TESTControllableObject());
                 break;
         }
 

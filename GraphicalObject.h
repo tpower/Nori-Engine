@@ -5,7 +5,7 @@
 
 #include <SDL/SDL.h>
 
-class GraphicalObject : public Object
+class GraphicalObject : virtual public Object
 {
     protected:
         SDL_Surface    *image;

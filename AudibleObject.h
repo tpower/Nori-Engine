@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class AudibleObject : public Object
+class AudibleObject : virtual public Object
 {
     protected:
 
