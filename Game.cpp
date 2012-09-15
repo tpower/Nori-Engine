@@ -4,17 +4,21 @@
 #include "TESTGraphicalObject.h"
 #include "TESTAudioObject.h"
 #include "TESTControllableObject.h"
+#include "TESTPhysicalObject.h"
 
 //Engines to load
 #include "GraphicsEngine.h"
 #include "AudioEngine.h"
 #include "ControlEngine.h"
+#include "PhysicsEngine.h"
 
 Game::Game()
 {
     engines.push_back(dynamic_cast<Engine*>(new GraphicsEngine()));
     engines.push_back(dynamic_cast<Engine*>(new AudioEngine()));
     engines.push_back(dynamic_cast<Engine*>(new ControlEngine()));
+    engines.push_back(dynamic_cast<Engine*>(new PhysicsEngine()));
+
     running = false;
 }
 
@@ -36,20 +40,27 @@ void Game::load(const char* fileName)
     if(file)
     {
         // load implementation to be added later
-        file >> data;
-        switch(data)
+        while( file >> data )
         {
-            case 1:
-                objects.push_back(new TESTGraphicalObject());
-                break;
-            case 2:
-                objects.push_back(new TESTAudioObject());
-                break;
-            case 3:
-                objects.push_back(new TESTControllableObject());
-                break;
+            //Storage Variables
+            int x, y, vx, vy;
+            switch(data)
+            {
+                case 1:
+                    file >> x >> y;
+                    objects.push_back(new TESTGraphicalObject(x, y));
+                    break;
+                case 2:
+                    objects.push_back(new TESTAudioObject());
+                    break;
+                case 3:
+                    objects.push_back(new TESTControllableObject());
+                    break;
+                case 4:
+                    file >> x >> y >> vx >> vy;
+                    objects.push_back(new TESTPhysicalObject(x, y, vx, vy));
+            }
         }
-
 
         running = true;
     }
@@ -65,6 +76,7 @@ void Game::play()
         {
             engines[i]->process(objects);
         }
+        SDL_FillRect( SDL_GetVideoSurface(), NULL, 0 );
         SDL_Delay(20);
     }
 }

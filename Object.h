@@ -3,16 +3,17 @@
 
 #include <SDL/SDL.h>
 
-struct Geometry
+struct vect
 {
-    int x;
-    int y;
+    double x;
+    double y;
 };
 
 class Object
 {
     protected:
-        SDL_Rect pos; // stores the position of the object
+
+        vect pos;      // stores the position of the object
         bool state;    // stores whether the object needs to be removed
         int type;      // stores what components it has
         int active;    // stores what components are active
@@ -20,12 +21,12 @@ class Object
         Object();
         virtual ~Object();
 
-        SDL_Rect       getPos()    {return pos;}
+        vect           getPos()    {return pos;}
         bool           getState()  {return state;}
         int            getType()   {return type;}
         int            getActive() {return active;}
 
-        void           setPos(int, int, int, int);
+        void           setPos(int, int);
 
         virtual void toggleActive(bool act) = 0;
 };

@@ -6,7 +6,7 @@
 class TESTGraphicalObject : public GraphicalObject
 {
     public:
-        TESTGraphicalObject();
+        TESTGraphicalObject(int, int);
         void draw(SDL_Surface *screen);
 
         void toggleActive(bool);

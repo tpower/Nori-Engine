@@ -1,0 +1,142 @@
+# depslib dependency file v1.0
+1347164859 source:c:\users\tucker\documents\codeblocks\project shako\game.cpp
+	"Game.h"
+	"TESTGraphicalObject.h"
+	"TESTAudioObject.h"
+	"TESTControllableObject.h"
+	"TESTPhysicalObject.h"
+	"GraphicsEngine.h"
+	"AudioEngine.h"
+	"ControlEngine.h"
+	"PhysicsEngine.h"
+
+1341080479 c:\users\tucker\documents\codeblocks\project shako\game.h
+	<vector>
+	"Object.h"
+	"Engine.h"
+	<fstream>
+	<SDL/SDL.h>
+
+1347143840 c:\users\tucker\documents\codeblocks\project shako\object.h
+	<SDL/SDL.h>
+
+1341080479 c:\users\tucker\documents\codeblocks\project shako\engine.h
+	"Object.h"
+	<vector>
+
+1341081136 source:c:\users\tucker\documents\codeblocks\project shako\graphicsengine.cpp
+	"GraphicsEngine.h"
+	"GraphicalObject.h"
+
+1341081091 c:\users\tucker\documents\codeblocks\project shako\graphicsengine.h
+	"Engine.h"
+	"GraphicalObject.h"
+	<SDL/SDL.h>
+
+1341639123 c:\users\tucker\documents\codeblocks\project shako\graphicalobject.h
+	"Object.h"
+	<SDL/SDL.h>
+
+1347144244 source:c:\users\tucker\documents\codeblocks\project shako\object.cpp
+	"Object.h"
+
+1341080479 source:c:\users\tucker\documents\codeblocks\project shako\main.cpp
+	<iostream>
+	<SDL/SDL.h>
+	"Game.h"
+
+1341080479 source:c:\users\tucker\documents\codeblocks\project shako\engine.cpp
+	"Engine.h"
+
+1343261413 source:c:\users\tucker\documents\codeblocks\project shako\graphicalobject.cpp
+	"GraphicalObject.h"
+
+1340936621 source:c:\users\tucker\documents\codeblocks\project shako\audioengine.cpp
+	"AudioEngine.h"
+
+1340933955 c:\users\tucker\documents\codeblocks\project shako\audioengine.h
+	"Engine.h"
+	"AudibleObject.h"
+	"SDL/SDL_mixer.h"
+
+1341639123 c:\users\tucker\documents\codeblocks\project shako\audibleobject.h
+	"SDL/SDL_mixer.h"
+	"Object.h"
+	<vector>
+
+1341281535 source:c:\users\tucker\documents\codeblocks\project shako\audibleobject.cpp
+	"AudibleObject.h"
+
+1341283652 source:c:\users\tucker\documents\codeblocks\project shako\testaudioobject.cpp
+	"TESTAudioObject.h"
+
+1341283652 c:\users\tucker\documents\codeblocks\project shako\testaudioobject.h
+	"AudibleObject.h"
+
+1347143831 source:c:\users\tucker\documents\codeblocks\project shako\testgraphicalobject.cpp
+	"TESTGraphicalObject.h"
+
+1347143831 c:\users\tucker\documents\codeblocks\project shako\testgraphicalobject.h
+	"GraphicalObject.h"
+
+1341637932 source:c:\users\tucker\documents\codeblocks\project shako\controlengine.cpp
+	"ControlEngine.h"
+
+1341638002 c:\users\tucker\documents\codeblocks\project shako\controlengine.h
+	"Engine.h"
+	"ControllableObject.h"
+
+1341639123 c:\users\tucker\documents\codeblocks\project shako\controllableobject.h
+	<SDL/SDL.h>
+	"Object.h"
+
+1341638393 source:c:\users\tucker\documents\codeblocks\project shako\controllableobject.cpp
+	"ControllableObject.h"
+
+1341640027 source:c:\users\tucker\documents\codeblocks\project shako\testcontrollableobject.cpp
+	"TESTControllableObject.h"
+
+1341639205 c:\users\tucker\documents\codeblocks\project shako\testcontrollableobject.h
+	"ControllableObject.h"
+	"AudibleObject.h"
+
+1347735416 source:c:\users\tucker\documents\codeblocks\project shako\physicalobject.cpp
+	"PhysicalObject.h"
+
+1347735416 c:\users\tucker\documents\codeblocks\project shako\physicalobject.h
+	<string>
+	<vector>
+	<math.h>
+	"Object.h"
+
+1347727476 source:c:\users\tucker\documents\codeblocks\project shako\physicsengine.cpp
+	"PhysicsEngine.h"
+
+1347246583 c:\users\tucker\documents\codeblocks\project shako\physicsengine.h
+	"Engine.h"
+	"PhysicalObject.h"
+	"Rectangle.h"
+	<SDL/SDL.h>
+	<Vector>
+
+1347735582 source:c:\users\tucker\documents\codeblocks\project shako\testphysicalobject.cpp
+	"TESTPhysicalObject.h"
+	"Rectangle.cpp"
+
+1347164795 c:\users\tucker\documents\codeblocks\project shako\testphysicalobject.h
+	"GraphicalObject.h"
+	"Rectangle.h"
+
+1347143878 source:c:\users\tucker\documents\codeblocks\project shako\circle.cpp
+	"Circle.h"
+
+1343598656 c:\users\tucker\documents\codeblocks\project shako\circle.h
+	"PhysicalObject.h"
+
+1347727476 c:\users\tucker\documents\codeblocks\project shako\rectangle.h
+	<Vector>
+	"PhysicalObject.h"
+
+1347735466 c:\users\tucker\documents\codeblocks\project shako\rectangle.cpp
+	"Rectangle.h"
+

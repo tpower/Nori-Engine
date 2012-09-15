@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="AudibleObject.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="122" topLine="0" />
+	</File>
+	<File name="AudibleObject.h" open="0" top="0" tabpos="5">
+		<Cursor position="178" topLine="2" />
+	</File>
+	<File name="AudioEngine.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="277" topLine="17" />
+	</File>
+	<File name="AudioEngine.h" open="0" top="0" tabpos="8">
+		<Cursor position="332" topLine="0" />
+	</File>
+	<File name="Circle.cpp" open="0" top="0" tabpos="11">
+		<Cursor position="86" topLine="0" />
+	</File>
+	<File name="Circle.h" open="0" top="0" tabpos="0">
+		<Cursor position="214" topLine="0" />
+	</File>
+	<File name="ControlEngine.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="172" topLine="6" />
+	</File>
+	<File name="ControlEngine.h" open="0" top="0" tabpos="7">
+		<Cursor position="188" topLine="0" />
+	</File>
+	<File name="ControllableObject.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="95" topLine="0" />
+	</File>
+	<File name="ControllableObject.h" open="0" top="0" tabpos="6">
+		<Cursor position="144" topLine="0" />
+	</File>
+	<File name="Engine.h" open="0" top="0" tabpos="4">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="Game.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="1667" topLine="37" />
+	</File>
+	<File name="Game.h" open="0" top="0" tabpos="2">
+		<Cursor position="117" topLine="3" />
+	</File>
+	<File name="GraphicalObject.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="131" topLine="0" />
+	</File>
+	<File name="GraphicalObject.h" open="0" top="0" tabpos="6">
+		<Cursor position="341" topLine="0" />
+	</File>
+	<File name="GraphicsEngine.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="366" topLine="2" />
+	</File>
+	<File name="GraphicsEngine.h" open="0" top="0" tabpos="2">
+		<Cursor position="573" topLine="0" />
+	</File>
+	<File name="Object.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="78" topLine="0" />
+	</File>
+	<File name="Object.h" open="0" top="0" tabpos="5">
+		<Cursor position="560" topLine="0" />
+	</File>
+	<File name="PhysicalObject.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="838" topLine="31" />
+	</File>
+	<File name="PhysicalObject.h" open="1" top="0" tabpos="5">
+		<Cursor position="439" topLine="6" />
+	</File>
+	<File name="PhysicsEngine.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="563" topLine="19" />
+	</File>
+	<File name="PhysicsEngine.h" open="0" top="0" tabpos="1">
+		<Cursor position="163" topLine="0" />
+	</File>
+	<File name="Rectangle.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="2050" topLine="6" />
+	</File>
+	<File name="Rectangle.h" open="0" top="0" tabpos="3">
+		<Cursor position="303" topLine="0" />
+	</File>
+	<File name="TESTAudioObject.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="154" topLine="0" />
+	</File>
+	<File name="TESTAudioObject.h" open="0" top="0" tabpos="0">
+		<Cursor position="181" topLine="0" />
+	</File>
+	<File name="TESTControllableObject.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="665" topLine="17" />
+	</File>
+	<File name="TESTControllableObject.h" open="0" top="0" tabpos="11">
+		<Cursor position="129" topLine="0" />
+	</File>
+	<File name="TESTGraphicalObject.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="297" topLine="0" />
+	</File>
+	<File name="TESTGraphicalObject.h" open="0" top="0" tabpos="9">
+		<Cursor position="201" topLine="0" />
+	</File>
+	<File name="TESTPhysicalObject.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="299" topLine="0" />
+	</File>
+	<File name="TESTPhysicalObject.h" open="0" top="0" tabpos="7">
+		<Cursor position="203" topLine="0" />
+	</File>
+	<File name="Test.dat" open="0" top="0" tabpos="0">
+		<Cursor position="3" topLine="0" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="173" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

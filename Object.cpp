@@ -3,7 +3,7 @@
 Object::Object()
 {
     type = 0;
-    setPos(0, 0, 0, 0);
+    setPos(0, 0);
 }
 
 Object::~Object()
@@ -11,14 +11,11 @@ Object::~Object()
 
 }
 
-void Object::setPos(int x, int y, int w, int h)
+void Object::setPos(int x, int y)
 {
     pos.x = x;
     pos.y = y;
-    pos.w = w;
-    pos.h = h;
 }
-
 void toggleActive(bool act)
 {
 
