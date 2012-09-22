@@ -15,27 +15,29 @@ Rectangle::Rectangle(int x, int y, int w, int h)
 
 
     point p1, p2, p3, p4;
+    //point test;
     p1.x = pos.x - (dimensions.x / 2);
     p1.y = pos.y - (dimensions.y / 2);
 
     p2.x = pos.x + (dimensions.x / 2);
     p2.y = pos.y - (dimensions.y / 2);
 
-    p3.x = pos.x - (dimensions.x / 2);
+    p3.x = pos.x + (dimensions.x / 2);
     p3.y = pos.y + (dimensions.y / 2);
 
-    p4.x = pos.x + (dimensions.x / 2);
+    p4.x = pos.x - (dimensions.x / 2);
     p4.y = pos.y + (dimensions.y / 2);
 
-    relativePoints.push_back(p1);
-    relativePoints.push_back(p2);
-    relativePoints.push_back(p3);
-    relativePoints.push_back(p4);
+    //test.x = pos.x;
+    //test.y = pos.y + 15;
+
+    recalculateRelativePoints();
 
     points.push_back(p1);
     points.push_back(p2);
     points.push_back(p3);
     points.push_back(p4);
+    //points.push_back(test);
 }
 
 Rectangle::~Rectangle()
@@ -93,5 +95,31 @@ void Rectangle::toggleActive(bool)
 
 }
 
+//
+void Rectangle::recalculateRelativePoints()
+{
+    point p1, p2, p3, p4;
+    //point test;
+    p1.x = pos.x - (dimensions.x / 2);
+    p1.y = pos.y - (dimensions.y / 2);
+
+    p2.x = pos.x + (dimensions.x / 2);
+    p2.y = pos.y - (dimensions.y / 2);
+
+    p3.x = pos.x + (dimensions.x / 2);
+    p3.y = pos.y + (dimensions.y / 2);
+
+    p4.x = pos.x - (dimensions.x / 2);
+    p4.y = pos.y + (dimensions.y / 2);
+
+    //test.x = pos.x;
+    //test.y = pos.y + 15;
+    relativePoints.clear();
+    relativePoints.push_back(p1);
+    relativePoints.push_back(p2);
+    relativePoints.push_back(p3);
+    relativePoints.push_back(p4);
+    //relativePoints.push_back(test);
+}
 
 #endif

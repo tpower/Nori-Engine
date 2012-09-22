@@ -9,7 +9,7 @@ class TESTPhysicalObject : virtual public GraphicalObject, virtual public Rectan
     private:
 
     public:
-        TESTPhysicalObject(double, double, double, double);
+        TESTPhysicalObject(double, double, double, double, double);
         ~TESTPhysicalObject();
 
         void run();

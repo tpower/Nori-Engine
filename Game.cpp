@@ -43,7 +43,7 @@ void Game::load(const char* fileName)
         while( file >> data )
         {
             //Storage Variables
-            int x, y, vx, vy;
+            double x, y, vx, vy, av;
             switch(data)
             {
                 case 1:
@@ -57,8 +57,8 @@ void Game::load(const char* fileName)
                     objects.push_back(new TESTControllableObject());
                     break;
                 case 4:
-                    file >> x >> y >> vx >> vy;
-                    objects.push_back(new TESTPhysicalObject(x, y, vx, vy));
+                    file >> x >> y >> vx >> vy >> av;
+                    objects.push_back(new TESTPhysicalObject(x, y, vx, vy, av));
             }
         }
 

@@ -10,6 +10,8 @@ class Circle : public PhysicalObject
     public:
         Circle(int, int, int);
         ~Circle();
+
+        void recalculateRelativePoints();
 };
 
 #endif // CIRCLE_H

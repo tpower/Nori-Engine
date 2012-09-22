@@ -11,3 +11,8 @@ Circle::~Circle()
 {
 
 }
+
+void Circle::recalculateRelativePoints()
+{
+
+}

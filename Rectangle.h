@@ -16,6 +16,7 @@ class Rectangle : public PhysicalObject
 
         void                    run();
         void                    toggleActive(bool);
+        void                    recalculateRelativePoints();
 };
 
 #endif // RECTANGLE_H

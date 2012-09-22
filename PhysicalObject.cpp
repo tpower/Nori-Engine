@@ -17,6 +17,7 @@ PhysicalObject::~PhysicalObject()
 
 void PhysicalObject::run()
 {
+
     //Calculate the position
     vel.x += acc.x;
     vel.y += acc.y;
@@ -24,6 +25,8 @@ void PhysicalObject::run()
     if( vel.y >= 1) vel.y = 0.999;
     pos.x += vel.x;
     pos.y += vel.y;
+
+    recalculateRelativePoints();
 
     //Calculate the angle
     angle += angularVel / 100;
@@ -41,6 +44,8 @@ void PhysicalObject::run()
         point pCalc;
         pCalc.x = relativePoints[i].x - pos.x;
         pCalc.y = relativePoints[i].y - pos.y;
+        double c = cos(angle);
+        double s = sin(angle);
         points[i].x = pos.x + pCalc.x * cos(angle) - pCalc.y * sin(angle);
         points[i].y = pos.y + pCalc.x * sin(angle) + pCalc.y * cos(angle);
     }
