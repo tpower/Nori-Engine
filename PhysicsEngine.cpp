@@ -50,24 +50,10 @@ void PhysicsEngine::detectAndResolveCollisions(vector<PhysicalObject*> PhysicalO
         vector<point> points1 = pObj1->getPoints();
         vector<point> points2 = pObj2->getPoints();
 
-        for( int k = 0; k < points1.size(); k++)
+        for( unsigned int k = 0; k < points1.size(); k++)
         {
-            for( int l = 0; l < points2.size(); l++)
+            for( unsigned int l = 0; l < points2.size(); l++)
             {
-                /*
-                point p, r, q, s;
-                double t, u;
-                p = points1[i];
-                r.x = points1[i+1].x - points1[i].x;
-                r.y = points1[i+1].y - points1[i].y;
-                q = points2[j];
-                s.x = points2[j+1].x - points2[j].x;
-                s.y = points2[j+1].y - points2[j].y;
-
-                double test1 = r.x * s.x + r.x * s.y;
-                double test2 = r.y * s.x + r.y * s.y;
-                */
-
                 //Compare each edge of each shape
                 point p1, p2, pp1, pp2;
                 float slope1, slope2;
@@ -79,7 +65,7 @@ void PhysicsEngine::detectAndResolveCollisions(vector<PhysicalObject*> PhysicalO
                 //need to check for divide by 0
                 if( p1.x - p2.x == 0)
                 {
-                    slope1 = -1;
+                    slope1 = -1;            //This is actually a bad solution and needs to be changed.
                 }
                 else
                 {
@@ -87,7 +73,7 @@ void PhysicsEngine::detectAndResolveCollisions(vector<PhysicalObject*> PhysicalO
                 }
                 if( pp1.x - pp2.x == 0)
                 {
-                    slope2 = -1;
+                    slope2 = -1;            //This is actually a bad solution and needs to be changed
                 }
                 else
                 {
@@ -95,14 +81,6 @@ void PhysicsEngine::detectAndResolveCollisions(vector<PhysicalObject*> PhysicalO
                 }
                 if( slope1 == slope2 )
                 {
-                    /*
-                    point testPoint;
-                    testPoint.x = q.x - p.x;
-                    testPoint.y = q.y - p.y;
-                    double test3 = r.x * testPoint.x + r.x * testPoint.y;
-                    double test4 = r.y * testPoint.x + r.y * testPoint.y;
-                    */
-
                     //the lines are parallel
 
                     //Y = Slope * X + YIntersect
@@ -112,7 +90,6 @@ void PhysicsEngine::detectAndResolveCollisions(vector<PhysicalObject*> PhysicalO
                     intercept1 = p1.y - slope1 * p1.x;
                     intercept2 = pp1.y - slope2 * pp1.x;
 
-                    //Fix divide by zero error
                     double x = (intercept2 - intercept1) / (slope1 - slope2);
                     double y = x * slope1 + intercept1;
 
@@ -136,7 +113,6 @@ void PhysicsEngine::detectAndResolveCollisions(vector<PhysicalObject*> PhysicalO
                     }
 
                     //this may miss the case where a large line is compared to a smaller line that it entirely eclipses
-                    //if( pp1.y == slope1 * pp1.x + intercept1 ||  pp2.y == slope1 * pp2.x + intercept1)
                     if(inXBounds1 && inYBounds1 && inXBounds2 && inYBounds2)
                     {
                         //the lines are collinear
@@ -156,7 +132,7 @@ void PhysicsEngine::detectAndResolveCollisions(vector<PhysicalObject*> PhysicalO
                     intercept1 = p1.y - slope1 * p1.x;
                     intercept2 = pp1.y - slope2 * pp1.x;
 
-                    if( slope1 == -1 )
+                    if( slope1 == -1 )                  //Need better flag than -1
                     {
                         //slope1 is infinite
                         bool inXBounds, inYBounds;
@@ -178,7 +154,7 @@ void PhysicsEngine::detectAndResolveCollisions(vector<PhysicalObject*> PhysicalO
                             test3++;
                         }
                     }
-                    else if( slope2 == -1 )
+                    else if( slope2 == -1 )             //Need better flag than -1
                     {
                         //slope2 is infinite
                         bool inXBounds, inYBounds;

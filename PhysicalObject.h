@@ -17,8 +17,9 @@ struct point
 class PhysicalObject : virtual public Object
 {
     protected:
-        vect vel;
-        vect acc;
+        float           mass;
+        vect            vel;
+        vect            acc;
         double          angle;
         double          angularVel;
         vector<point>   points;         //The actual position of the points

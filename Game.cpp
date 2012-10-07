@@ -5,6 +5,7 @@
 #include "TESTAudioObject.h"
 #include "TESTControllableObject.h"
 #include "TESTPhysicalObject.h"
+#include "TESTSmallerObject.h"
 
 //Engines to load
 #include "GraphicsEngine.h"
@@ -59,6 +60,11 @@ void Game::load(const char* fileName)
                 case 4:
                     file >> x >> y >> vx >> vy >> av;
                     objects.push_back(new TESTPhysicalObject(x, y, vx, vy, av));
+                    break;
+                case 5:
+                    file >> x >> y >> vx >> vy >> av;
+                    objects.push_back(new TESTSmallerObject(x, y, vx, vy, av));
+                    break;
             }
         }
 

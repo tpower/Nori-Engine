@@ -1,9 +1,8 @@
-#include "TESTPhysicalObject.h"
-#include "Rectangle.cpp"
-//^^^^^I Dont like that I did this
+#include "TESTSmallerObject.h"
+#include "Rectangle.h"
 
-TESTPhysicalObject::TESTPhysicalObject(double x, double y, double vx, double vy, double av)
-    : Rectangle::Rectangle(x, y, 50, 50)
+TESTSmallerObject::TESTSmallerObject(double x, double y, double vx, double vy, double av)
+    : Rectangle::Rectangle(x, y, 30, 30)
 {
     type = 11000;
 
@@ -11,20 +10,20 @@ TESTPhysicalObject::TESTPhysicalObject(double x, double y, double vx, double vy,
     vel.y = vy;
 
     angularVel = av;
-    mass = 100;
+    mass = 20;
 }
 
-TESTPhysicalObject::~TESTPhysicalObject()
+TESTSmallerObject::~TESTSmallerObject()
 {
 
 }
 
-void TESTPhysicalObject::run()
+void TESTSmallerObject::run()
 {
     Rectangle::run();
 }
 
-void TESTPhysicalObject::draw(SDL_Surface *screen)
+void TESTSmallerObject::draw(SDL_Surface *screen)
 {
     SDL_Rect r1, r2, r3, r4, r5;
     //SDL_Rect test;
@@ -47,7 +46,7 @@ void TESTPhysicalObject::draw(SDL_Surface *screen)
     SDL_BlitSurface(SDL_LoadBMP("dot.bmp"), NULL, screen, &r5);
 }
 
-void TESTPhysicalObject::toggleActive(bool act)
+void TESTSmallerObject::toggleActive(bool act)
 {
 
 }

@@ -8,6 +8,8 @@ PhysicalObject::PhysicalObject()
     acc.y = 0;
     vel.x = 0;
     vel.y = 0;
+
+    mass = 100;
 }
 
 PhysicalObject::~PhysicalObject()
@@ -39,13 +41,11 @@ void PhysicalObject::run()
     //x' = x cos theta - y sin theta
     //y' = x sin theta + y cos theta
 
-    for(int i = 0; i < points.size(); i++)
+    for(unsigned int i = 0; i < points.size(); i++)
     {
         point pCalc;
         pCalc.x = relativePoints[i].x - pos.x;
         pCalc.y = relativePoints[i].y - pos.y;
-        double c = cos(angle);
-        double s = sin(angle);
         points[i].x = pos.x + pCalc.x * cos(angle) - pCalc.y * sin(angle);
         points[i].y = pos.y + pCalc.x * sin(angle) + pCalc.y * cos(angle);
     }
